@@ -1,15 +1,27 @@
 # nav-plugin
-nav-plugin插件
-这是一款用于收集项目中所有Activity、Fragment页面的 gradle 插件，配合jetpack navigation框架使用
+nav-plugin Plugin
+This is a Gradle plugin used to collect all Activity and Fragment pages in a project, used in conjunction with the Jetpack Navigation framework.
 
-Eaxmple:
+Example:
 
-step1: @NavDestination(type=NavType.Fragment,route="home_fragment") class HomeFragment:Fragment{
-
-} @NavDestination(type=NavType.Activity,route="home_activity") class HomeActivity:FragmentActivity{
+Step 1: 
+```kotlin
+@NavDestination(type=NavType.Fragment, route="home_fragment") 
+class HomeFragment: Fragment {
 
 }
 
-step2: class MainActivity : FragmentActivity{
+@NavDestination(type=NavType.Activity, route="home_activity") 
+class HomeActivity: FragmentActivity {
 
-fun onCreate(bundle:Bundle){ NavRegistry.DESTINATIONS } }
+}
+```
+
+Step 2: 
+```kotlin
+class MainActivity : FragmentActivity {
+    fun onCreate(bundle: Bundle) {
+        NavRegistry.DESTINATIONS
+    }
+}
+```
