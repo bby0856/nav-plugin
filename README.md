@@ -1,6 +1,5 @@
 # nav-plugin
 nav-plugin插件
-# nav-plugin
 这是一款用于收集项目中所有Activity、Fragment页面的 gradle 插件，配合jetpack navigation框架使用
 
 Eaxmple:
